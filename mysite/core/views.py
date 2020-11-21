@@ -5,7 +5,6 @@ from django.contrib.auth.decorators import login_required
 from django.views.generic import TemplateView
 from django.contrib.auth.mixins import LoginRequiredMixin
 
-
 def home(request):
     count = User.objects.count()
     return render(request, 'home.html', {
